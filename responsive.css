@@ -1,0 +1,92 @@
+@media (max-width: 1199.98px) {
+  .nav-list { gap: 16px; }
+  .nav-list a { font-size: 9px; }
+  .site-nav .container { min-height: 75px; }
+  .barber-image { height: 310px; }
+}
+
+@media (max-width: 991.98px) {
+  .section-pad { padding: 82px 0; }
+  .site-nav { position: fixed; }
+  .nav-toggle { display: block; }
+  .nav-list { align-items: stretch; background: #171715; display: none; flex-direction: column; gap: 0; left: 0; padding: 13px 24px 22px; position: absolute; right: 0; top: 75px; }
+  .nav-list.open { display: flex; }
+  .nav-list li { border-bottom: 1px solid rgba(255,255,255,.09); }
+  .nav-list a { display: block; font-size: 11px; padding: 13px 0; }
+  .nav-list .nav-book { border: 0; }
+  .hero-home { min-height: 700px; }
+  .welcome-image { height: 390px; }
+  .barber-image { height: 360px; }
+  .booking-aside { border-left: 0; border-top: 1px solid var(--line); padding: 25px 0 0; }
+  .gallery-grid { grid-auto-rows: 190px; grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .gallery-item.gallery-wide { grid-column: span 2; }
+}
+
+@media (max-width: 767.98px) {
+  .section-pad { padding: 68px 0; }
+  .hero-home { min-height: 660px; }
+  .hero-content { padding-top: 120px; }
+  .display-title { font-size: clamp(4.1rem, 17vw, 6rem); }
+  .hero-copy { font-size: 13px; }
+  .hero-note { bottom: 25px; font-size: 7px; right: 5%; }
+  .scroll-cue { bottom: 24px; font-size: 7px; left: 5%; }
+  .welcome-image { height: 360px; }
+  .stat-line { gap: 9px; }
+  .stat-line strong { font-size: 28px; }
+  .stat-line > span { font-size: 7px; margin-right: 8px; }
+  .service-image { height: 205px; }
+  .barber-image { height: 330px; }
+  .gallery-tile { height: 175px; }
+  .offer-band { padding: 35px 0; }
+  .offer-band .btn { width: 100%; }
+  .page-hero { min-height: 400px; padding-top: 115px; }
+  .compact-hero { min-height: 340px; }
+  .gallery-grid { gap: 9px; grid-auto-rows: 150px; grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .gallery-item.gallery-tall { grid-row: span 2; }
+  .gallery-item.gallery-wide { grid-column: span 2; }
+  .gallery-item span { bottom: 12px; font-size: 7px; left: 10px; }
+  .pricing-row { gap: 8px; grid-template-columns: minmax(0, 1fr) auto 57px auto; padding: 17px 0; }
+  .pricing-row h3 { font-size: 17px; }
+  .pricing-row p { font-size: 9px; }
+  .pricing-row .duration { font-size: 8px; }
+  .pricing-row .price { font-size: 18px; }
+  .pricing-book { font-size: 8px; }
+  .booking-shell { padding: 28px 20px; }
+  .booking-step { min-height: 360px; }
+  .booking-step h2 { font-size: 29px; }
+  .select-grid { grid-template-columns: 1fr; }
+  .select-card { padding: 13px; }
+  .booking-actions { margin-top: 10px; }
+  .booking-toast { bottom: 14px; right: 14px; }
+  .contact-details { gap: 17px; }
+  .contact-form-card { padding: 26px 20px; }
+  .map-card { bottom: 18px; left: 18px; top: auto; transform: none; width: min(300px, calc(100% - 36px)); }
+  .map-section, .map-section iframe { height: 530px; min-height: 530px; }
+  .location-section { min-height: 530px; }
+  .location-section .map-card { bottom: 18px; left: 18px; top: auto; transform: none; width: min(300px, calc(100% - 36px)); }
+  .lightbox { gap: 8px; padding: 22px 10px; }
+  .lightbox figure { max-width: calc(100vw - 120px); }
+  .lightbox .lightbox-prev, .lightbox .lightbox-next { flex-basis: 36px; height: 36px; width: 36px; }
+  .instagram-grid { gap: 6px; grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .service-category-section + .service-category-section { margin-top: 65px; }
+  .booking-shell { scroll-margin-top: 92px; }
+  .footer-bottom { align-items: flex-start; flex-direction: column; gap: 10px; }
+}
+
+@media (max-width: 420px) {
+  .brand-mark { font-size: 18px; }
+  .brand-icon { height: 31px; width: 31px; }
+  .hero-home { min-height: 630px; }
+  .hero-home .btn { padding: 13px 15px; }
+  .hero-home .btn span { margin-left: 6px; }
+  .gallery-tile { height: 140px; }
+  .status-card { padding: 28px 20px; }
+  .contact-details { grid-template-columns: 1fr; }
+  .lightbox .lightbox-prev, .lightbox .lightbox-next { flex-basis: 30px; height: 30px; width: 30px; }
+  .lightbox figure { max-width: calc(100vw - 80px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+  .reveal { opacity: 1; transform: none; }
+}

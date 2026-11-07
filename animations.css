@@ -1,0 +1,30 @@
+.page-ready body { animation: page-arrive .6s ease both; }
+.hero-home .eyebrow, .hero-home .display-title, .hero-home .hero-copy, .hero-home .hero-content .btn { animation: hero-rise .8s cubic-bezier(.2,.7,.2,1) both; }
+.hero-home .display-title { animation-delay: .12s; }
+.hero-home .hero-copy { animation-delay: .22s; }
+.hero-home .hero-content .btn { animation-delay: .32s; }
+.page-hero .eyebrow, .page-hero h1, .page-hero p:not(.eyebrow) { animation: hero-rise .7s ease both; }
+.page-hero h1 { animation-delay: .1s; }
+.page-hero p:not(.eyebrow) { animation-delay: .18s; }
+.reveal { transition-delay: var(--reveal-delay, 0ms); }
+.service-card, .barber-card, .benefit-card { transition: transform .42s cubic-bezier(.2,.75,.2,1), box-shadow .42s ease, background-color .3s ease; }
+.service-card:hover, .barber-card:hover, .benefit-card:hover { box-shadow: 0 22px 50px rgba(0,0,0,.16); transform: translateY(-7px); }
+.gallery-item { animation-duration: .5s; animation-fill-mode: both; }
+.gallery-item.gallery-enter { animation-name: gallery-arrive; }
+.site-nav { transition: background .3s ease, box-shadow .3s ease, min-height .3s ease; }
+.site-nav.scrolled { background: rgba(17,17,16,.97); box-shadow: 0 8px 26px rgba(0,0,0,.2); }
+.btn { overflow: hidden; position: relative; }
+.btn::after { background: rgba(255,255,255,.2); content: ""; height: 150%; left: -120%; position: absolute; top: -25%; transform: skewX(-20deg); transition: left .55s ease; width: 60%; }
+.btn:hover::after { left: 140%; }
+.number-stat { animation: stat-pop .5s ease both; }
+.gallery-item img { transition: transform .75s cubic-bezier(.2,.65,.25,1), filter .5s ease; }
+.gallery-item:hover img { filter: brightness(.72); transform: scale(1.075); }
+.lightbox figure { animation: lightbox-arrive .24s ease both; }
+@keyframes page-arrive { from { opacity: .75; } to { opacity: 1; } }
+@keyframes hero-rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes gallery-arrive { from { opacity: 0; transform: translateY(13px) scale(.985); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes lightbox-arrive { from { opacity: 0; transform: scale(.97); } to { opacity: 1; transform: scale(1); } }
+@keyframes stat-pop { from { opacity: 0; transform: translateY(9px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
